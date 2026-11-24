@@ -1,0 +1,265 @@
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f5f7;
+    color: #222;
+}
+
+/* Header */
+.header {
+    background-color: #009b50;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ffdd33;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #ffdd33;
+}
+
+.login {
+    padding: 9px 20px;
+    background-color: white;
+    color: #009b50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Secondary Navigation */
+.sub-menu {
+    background-color: #087c45;
+    padding: 13px 6%;
+    display: flex;
+    gap: 30px;
+}
+
+.sub-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    margin: 25px auto;
+}
+
+/* Live Matches */
+.live-section h2,
+.news-section h2 {
+    margin-bottom: 18px;
+    font-size: 22px;
+}
+
+.match-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.match-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    position: relative;
+    line-height: 1.8;
+}
+
+.match-card h3 {
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+.match-card h2 {
+    color: #087c45;
+    margin: 0;
+}
+
+.live {
+    background-color: #e53935;
+    color: white;
+    padding: 4px 9px;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+.completed {
+    background-color: #777;
+    color: white;
+    padding: 4px 9px;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+.upcoming {
+    background-color: #2878d0;
+    color: white;
+    padding: 4px 9px;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+.overs,
+.result {
+    color: #777;
+    font-size: 13px;
+}
+
+/* Main Content Grid */
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+/* News Section */
+.news-card {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 18px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.news-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.news-info h3 {
+    margin-bottom: 10px;
+}
+
+.news-info p {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.news-info a {
+    color: #009b50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sidebar */
+.sidebar-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.sidebar-box h2 {
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.schedule {
+    border-bottom: 1px solid #ddd;
+    padding: 13px 0;
+}
+
+.schedule p {
+    color: #777;
+    font-size: 13px;
+    margin-top: 7px;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Footer */
+.footer {
+    background-color: #172c25;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.footer h2 {
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 8px 0;
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .header {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .sub-menu {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .match-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .news-card {
+        grid-template-columns: 1fr;
+    }
+
+    .news-card img {
+        height: 200px;
+    }
+}
